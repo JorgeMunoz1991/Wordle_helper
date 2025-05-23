@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #121213;
+  color: white;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(6, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #3a3a3c;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.correct {
+  background: #538d4e;
+}
+
+.present {
+  background: #b59f3b;
+}
+
+.absent {
+  background: #3a3a3c;
+}
